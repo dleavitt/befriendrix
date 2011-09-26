@@ -1,0 +1,20 @@
+%form(method="post" action="/")
+  %fieldset
+    %legend Your App
+    %p
+      %label
+        App ID
+        %input(type="text" name="app_id")
+      %label
+        App Secret
+        %input(type="text" name="app_secret")
+  %fieldset
+    %legend Your Users
+    %p
+      %textarea(style="width:100%;height:125px;" name="uids" disabled="disabled")
+    %p
+      %del As many user IDs as you want. Separate with commas.
+      Actually it will just do all test users for the app.
+    %p
+      %input(type="submit") &nbsp; (Can take a while)
+      
